@@ -1,0 +1,34 @@
+answer = input("Do you want to play a game? yes/no")
+
+if answer == "yes":
+	answer = input("You are walking home from a friends house at night. Do you take the shortcut through the cemetary? yes/no")
+	
+	if answer == "yes":
+		answer = input("While you cut through the cemetary, a zombie came out of its grave. Do you run to the abandoned house in the cemetary or try to outrun tue zombie? house/run")
+	
+		if answer == "house":
+				answer = input("You run into the house and there is a werewolf in front of you. Do you run through door one, two, or three?")
+				
+				if answer == "one":
+					print("Door one was locked. The werewolf ate you. You lose.")
+				
+				elif answer == "two":
+					answer = input("There is an open window. Do you jump out and run or barricade it? run/barricade")	
+					
+					if answer == "run":
+						print("You dive out the window and make a dash for your home. You make it and live to tell the tale! Congratulations! You win!")
+						
+					else:
+						print("Bad move. The werewolf breaks in and eats you. You lose!")
+	
+	
+				else:
+					print("The werewolf broke through before you could escape. You were eaten. You lose.")
+		else:
+				print("The zombie caught you and ate you. You lose.")
+
+	else:
+		print("You got abducted by a UFO on the way home and were never seen again. You lose.")
+
+else:
+	print("That's too bad. Maybe later.")
